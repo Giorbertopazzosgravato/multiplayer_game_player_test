@@ -128,7 +128,6 @@ impl Player {
         println!("sending buffer");
         let buffer = self.buffer.as_slice();
         let stream = Arc::clone(&self.stream);
-        println!("deadlock, trust me");
         {
             let mut stream = stream.lock().unwrap();
             match stream.write(buffer){
