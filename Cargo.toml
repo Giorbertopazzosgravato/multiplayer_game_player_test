@@ -1,0 +1,44 @@
+[package]
+name = "multiplayer_game_player_test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+[dependencies]
+rand = "0.8.5"
+anyhow = "1.0.71"
+cgmath = "0.18.0"
+#soloud = "1.0.2"
+cfg-if = "1"
+winit = "0.29.1-beta"
+env_logger = "0.10"
+log = "0.4"
+wgpu = "0.16.3"
+pollster = "0.3"
+bytemuck = { version = "1.12", features = [ "derive" ] }
+image = "0.24.6"
+fs_extra = "1.2"
+wgpu_glyph = "0.20.0"
+glob = "0.3"
+tobj = { version = "4.0.0", features = [
+    "async",
+]}
+#[target.'cfg(target_arch = "wasm32")'.dependencies]
+#console_error_panic_hook = "0.1.6"
+#console_log = "1.0"
+#wgpu = { version = "0.17.0", features = ["webgl"]}
+#wasm-bindgen = "=0.2.87"
+#wasm-bindgen-futures = "0.4.30"
+#reqwest = { version = "0.11" }
+#web-sys = { version = "0.3.53", features = [
+#    "Document",
+#    "Window",
+#    "Element",
+#]}
+#[build-dependencies]
+#anyhow = "1.0.71"
+#fs_extra = "1.2"
+#glob = "0.3.1"
